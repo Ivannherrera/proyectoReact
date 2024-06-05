@@ -1,0 +1,42 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "nombre": "Espejo Sunset",
+            "detalle": "Espejo de 4mm con marco de hierro y pintado al horno. Medidas: 40x60.",
+            "clasificacion": "Objetos Deco"
+        },
+        {
+            "id": 2,
+            "nombre": "Edredón Nepal de tussor",
+            "detalle": "Tussor de un lado y lienzo crudo del otro, lavable en lavarropas y 100% de algodon.",
+            "clasificacion": "Textiles"
+        },
+        {
+            "id": 3,
+            "nombre": "Recibidor Amalfi",
+            "detalle": "Recibidor de madera Teca, en medidas 70x30x80.",
+            "clasificacion": "Muebles"
+        },
+        {
+            "id": 4,
+            "nombre": "Pantallas Kala",
+            "detalle": "Innovadoras pantallas para el sector principal del hogar, Medidas: 65 cm de diámetro x 15 cm de alto 100 cm de diámetro x 17 cm de alto 130 cm de diámetro x 25 cm de diámetro.",
+            "clasificacion": "Iluminacion"
+        }
+    ],
+    "clasificacion": [
+        {
+            "nombre": "Muebles",
+            "id": "Muebles"
+        },
+        {
+            "nombre": "Objetos Deco",
+            "id": "Objetos Deco"
+        },
+        {
+            "nombre": "Textiles",
+            "id": "Textiles"
+        }
+    ]
+}

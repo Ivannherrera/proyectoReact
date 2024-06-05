@@ -1,15 +1,33 @@
-import { ItemListContainer } from "./components/ItemListContainer"
-import { NavBar } from "./components/NavBar"
 import "./css/main.css"
+import './components/Header/NavBar'
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { Header } from "./components/Header/Header"
+import { ItemListContainer } from "./components/ItemListContainer"
+import { ItemDetailContainer } from "./components/ItemDetailContainer";
+import { NotFound } from "./components/NotFound";
+import { Footer } from "./components/footer/Footer";
+
 
 
 function App() {
+  
+const valorCarrito = 1 ;
 
   return (
-    <>
-  <NavBar/>
-  <div className="prop"><ItemListContainer greeting= "Bienvenidos a DecoGR"/></div>
-    </>
+    <BrowserRouter>
+    <Header valorModificado={valorCarrito}/>
+    <Routes>
+      <Route path="/" element={
+        <>
+        <ItemListContainer />
+        </>
+      }></Route>
+      <Route path="/category/:categoryId" element={<ItemListContainer />}></Route>
+      <Route path="/item/:itemId" element={<ItemDetailContainer/>}></Route>
+      <Route path="/*" element={<NotFound/>}></Route>
+    </Routes>
+    <Footer/>
+    </BrowserRouter>
   )
 }
 
